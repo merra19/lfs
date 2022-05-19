@@ -1,0 +1,41 @@
+####  $LFS Variable
+LFSDIR="/mnt/lfs"
+
+####  new user created
+LFSUSER="merry19"
+
+####  testing
+TEST="on"
+
+####  optimization x32
+LFSFLAGSX32="-pipe -O2 -march=native"
+
+####  optimization x64
+LFSFLAGS="-pipe -march=native -O2 -fno-semantic-interposition -fno-plt"
+
+###  cxx flags
+LFSCXFLAGS="-Wp,-D_GLIBCXX_ASSERTIONS"
+
+#### linker flags added
+LFSLDFLAGS="-Wl,-O1,--sort-common,--as-needed"
+
+#### LTO optimization
+LFSLTO="-flto=auto -fuse-linker-plugin"
+
+####  multithreading
+LFSCPU=10
+
+####  zone country  >>>  ls -l /etc/localtime
+zonecountry="Europe/Paris"
+
+### source repository
+SOURCEDIR="/mnt/nas/source/LFS"
+
+### kernel version
+KERNELVERSION="5.17.5"
+
+#### version
+LFSVERSION="LFS Version r11.1-99 May 2nd, 2022 "
+####  [pierre] - Update bootscripts to 20220324
+#### 2022-05-01
+####  bdubbs] - Change nobody/nogroup uid/gid to 65534.
