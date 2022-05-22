@@ -1,5 +1,5 @@
 export LFS=/mnt/lfs
-export LFSUSER="tara"
+export LFSUSER="merry19"
 
 export cpu=10
 

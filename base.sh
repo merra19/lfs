@@ -56,7 +56,7 @@ ln -sv usr/lib32 $LFS/lib32
 
 mkdir -pv $LFS/tools
 
-chown -v tara $LFS/{usr{,/*},lib,var,etc,bin,sbin,tools}
+chown -v $LFSUSER $LFS/{usr{,/*},lib,var,etc,bin,sbin,tools}
 case $(uname -m) in
   x86_64) chown -v $LFSUSER $LFS/lib64 ;;
 esac
