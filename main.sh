@@ -13,7 +13,7 @@ if [[ $EUID -eq 0 ]]; then
    exit 1
 fi
 
-if [ "$(whoami)" != "tara" ]; then
+if [ "$(whoami)" != "$LFSUSER" ]; then
         echo "script must be run as user: lfs "
         exit 255
 fi
